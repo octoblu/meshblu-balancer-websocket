@@ -9,6 +9,15 @@ assert_servers(){
   fi
 }
 
+assert_password() {
+  local password="$1"
+
+  if [ -z "$password" ]; then
+    echo "PASSWORD not found, cowardly refusing to do anything"
+    exit 1
+  fi
+}
+
 run_haproxy() {
   haproxy -f /usr/local/etc/haproxy/haproxy.cfg &
   child=$!
