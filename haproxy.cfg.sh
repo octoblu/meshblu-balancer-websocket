@@ -46,7 +46,6 @@ for SERVER in $SERVERS; do
 done
 
 cat <<EOF
-  http-request set-header Host meshblu-websocket.octoblu.com
 
 frontend http-in
   bind :80
