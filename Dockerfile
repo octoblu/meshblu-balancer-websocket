@@ -1,9 +1,7 @@
-FROM galexrt/pen
+FROM haproxy:1.6
 
 EXPOSE 80
-EXPOSE 9000
 
-ENTRYPOINT []
-
-COPY run.sh .
+ADD run.sh .
+ADD haproxy.cfg.sh .
 CMD ["./run.sh"]

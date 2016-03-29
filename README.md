@@ -1,2 +1,2 @@
-# meshblu-balancer-websocket
-Load balance meshblu-core-protocol-adapter-websocket
+# meshblu-balancer-socket.io
+Load balance meshblu-core-protocol-adapter-socket.io
